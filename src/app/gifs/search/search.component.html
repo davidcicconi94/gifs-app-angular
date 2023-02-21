@@ -1,0 +1,22 @@
+<h4 class="mb-4">Buscar Gif:</h4>
+<div class="container">
+  <div class="col">
+    <div class="row">
+      <div class="col">
+        <!-- (keyup.enter) = al presionar enter en la pagina, vamos a disparar cierto metodo -->
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Buscar..."
+          (keyup.enter)="search()"
+          #TextSearch
+        />
+      </div>
+      <div class="col">
+        <button (click)="search()" type="button" class="btn btn-dark">
+          Search
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
